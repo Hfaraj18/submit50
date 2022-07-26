@@ -20,6 +20,6 @@ jobs:
     - name: Deploy to PyPI
       if: ${{ github.ref == 'refs/heads/main' }}
       uses: pypa/gh-action-pypi-publish@release/v1
-      with:
+      # with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
